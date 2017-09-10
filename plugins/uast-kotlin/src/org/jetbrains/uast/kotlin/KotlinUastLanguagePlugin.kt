@@ -215,7 +215,6 @@ internal object KotlinConverter {
         is KtValueArgumentList -> unwrapElements(element.parent)
         is KtValueArgument -> unwrapElements(element.parent)
         is KtDeclarationModifierList -> unwrapElements(element.parent)
-        is KtStringTemplateExpression -> unwrapElements(element.parent)
         else -> element
     }
 
